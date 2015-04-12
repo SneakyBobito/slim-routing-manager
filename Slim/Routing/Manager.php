@@ -58,6 +58,8 @@ class Manager
         // load the controllers
         if (count($controllerDirs)) {
             foreach ($controllerDirs as $controllerPath) {
+                
+                
                 $controllers = $this->readDirectory($controllerPath);
                 if (count($controllers)) {
                     $this->controllers = $controllers;
